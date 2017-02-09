@@ -1,5 +1,7 @@
 #include "iRobot.h"
+#include <unistd.h>
 #include <stdio.h>
+
 
 void main()
 {
@@ -24,18 +26,18 @@ void main()
 	robotStart(fd);
 
 	robotSafeMode(fd);
-	sleep(1);
+	sleep(10);
 	robotLED(fd);
-	sleep(1);
+	sleep(10);
 
 	robotStartRotating(fd);
-	sleep(2);
+	sleep(10);
 	robotStopRotating(fd);
 	
-	sleep(2);
+	sleep(10);
 
 	robotStartDrive(fd);
-	sleep(2);
+	sleep(10);
 	robotStopDrive(fd);
 
 
